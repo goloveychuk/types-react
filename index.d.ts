@@ -307,7 +307,7 @@ React.cloneElement(element, <{ isDisabled?: boolean } & React.Attributes>{
             };
         }
     
-        class PureComponent<P = {}, S = {}, DP extends Partial<P>=P> extends Component<P, S, P> { }
+        class PureComponent<P = {}, S = {}, DP extends Partial<P>=P> extends Component<P, S, DP> { }
     
         interface ClassicComponent<P = {}, S = {}> extends Component<P, S> {
             replaceState(nextState: S, callback?: () => void): void;
